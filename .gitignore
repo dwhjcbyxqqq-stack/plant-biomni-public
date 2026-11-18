@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.key
+*.pem
+.DS_Store
+run.json
+packet.json
+*-audit.json
+registry-snapshots/
