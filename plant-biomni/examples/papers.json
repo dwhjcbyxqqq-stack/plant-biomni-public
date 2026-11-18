@@ -1,0 +1,12 @@
+[
+  {
+    "id": "synthetic-example",
+    "doi": "10.1000/fictional-example",
+    "title": "Synthetic software fixture, not an actual paper",
+    "publication_type": "unknown",
+    "read_scope": "not_read",
+    "species": [
+      "Example species"
+    ]
+  }
+]
