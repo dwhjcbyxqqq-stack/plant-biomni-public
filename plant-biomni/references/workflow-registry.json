@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0.0",
+  "registry_version": "0.1.0",
+  "scope": "Public-core registry only; excludes private workflow catalog",
+  "workflow_count": 3,
+  "workflows": [
+    {
+      "id": "PB-WF-METRICS",
+      "version": "1.0.0-public",
+      "name": "Reviewed stomatal-count arithmetic",
+      "domain": "analysis",
+      "status": "runnable_analysis_unvalidated",
+      "canonical_status": "candidate",
+      "execution_kind": "digital",
+      "provenance": [
+        {
+          "kind": "software",
+          "source": "Bundled script and synthetic regression tests; not scientific validation"
+        }
+      ],
+      "inputs": [
+        "Reviewed count CSV",
+        "Explicit counting contract"
+      ],
+      "outputs": [
+        "Qualified SI/density JSON"
+      ],
+      "steps": [
+        "Resolve input identity and intended interpretation",
+        "Run scripts/stomatal_metrics.py with supplied CSV and contract",
+        "Inspect all warnings and retain input/output hashes"
+      ],
+      "qc_gates": [
+        "Reject malformed or contradictory inputs",
+        "Do not treat metadata assertions as observations",
+        "Review output before biological interpretation"
+      ],
+      "dependencies": [
+        "Python 3.10+ standard library"
+      ],
+      "unresolved": [
+        "Scientific validity and source-data correctness require independent review"
+      ],
+      "supersedes": null
+    },
+    {
+      "id": "PB-WF-SEQUENCE-QC",
+      "version": "1.0.0-public",
+      "name": "Supplied-sequence consistency audit",
+      "domain": "analysis",
+      "status": "runnable_analysis_unvalidated",
+      "canonical_status": "candidate",
+      "execution_kind": "digital",
+      "provenance": [
+        {
+          "kind": "software",
+          "source": "Bundled script and synthetic regression tests; not scientific validation"
+        }
+      ],
+      "inputs": [
+        "Exact sequence manifest"
+      ],
+      "outputs": [
+        "Sequence audit JSON"
+      ],
+      "steps": [
+        "Resolve input identity and intended interpretation",
+        "Run scripts/sequence_design_qc.py on supplied manifest",
+        "Inspect all warnings and retain input/output hashes"
+      ],
+      "qc_gates": [
+        "Reject malformed or contradictory inputs",
+        "Do not treat metadata assertions as observations",
+        "Review output before biological interpretation"
+      ],
+      "dependencies": [
+        "Python 3.10+ standard library"
+      ],
+      "unresolved": [
+        "Scientific validity and source-data correctness require independent review"
+      ],
+      "supersedes": null
+    },
+    {
+      "id": "PB-WF-LITERATURE-AUDIT",
+      "version": "1.0.0-public",
+      "name": "Bibliographic metadata audit",
+      "domain": "analysis",
+      "status": "runnable_analysis_unvalidated",
+      "canonical_status": "candidate",
+      "execution_kind": "digital",
+      "provenance": [
+        {
+          "kind": "software",
+          "source": "Bundled script and synthetic regression tests; not scientific validation"
+        }
+      ],
+      "inputs": [
+        "Complete bibliographic JSON"
+      ],
+      "outputs": [
+        "Metadata audit JSON"
+      ],
+      "steps": [
+        "Resolve input identity and intended interpretation",
+        "Run scripts/literature_audit.py with complete metadata input",
+        "Inspect all warnings and retain input/output hashes"
+      ],
+      "qc_gates": [
+        "Reject malformed or contradictory inputs",
+        "Do not treat metadata assertions as observations",
+        "Review output before biological interpretation"
+      ],
+      "dependencies": [
+        "Python 3.10+ standard library"
+      ],
+      "unresolved": [
+        "Scientific validity and source-data correctness require independent review"
+      ],
+      "supersedes": null
+    }
+  ]
+}
