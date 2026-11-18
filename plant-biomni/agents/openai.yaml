@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plant Biomni public core"
+  short_description: "Audit plant research data and evidence metadata"
+  default_prompt: "Use plant-biomni to audit supplied plant research data, preserving source identity and scientific limitations."
