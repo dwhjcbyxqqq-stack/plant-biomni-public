@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "coordinate_convention": "0-based-half-open",
+  "candidates": [
+    {
+      "id": "P1",
+      "sequence": "AAAACGTTCCGG",
+      "purpose": "synthetic software fixture",
+      "sources": [
+        {
+          "id": "synthetic:test-sequence",
+          "version": "1"
+        }
+      ],
+      "modules": [
+        {
+          "id": "left",
+          "start": 0,
+          "end": 4,
+          "strand": "+",
+          "expected_sequence": "AAAA"
+        }
+      ]
+    }
+  ]
+}

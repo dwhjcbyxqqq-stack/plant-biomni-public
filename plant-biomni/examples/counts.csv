@@ -1,0 +1,2 @@
+sample_id,plant_id,leaf_id,field_id,stomata_pairs,nonstomatal_cells,denominator_complete,identity_resolved,units_resolved,border_resolved,same_roi,area_um2
+experiment-1,P1,L1,F1,10,90,True,True,True,True,True,100000

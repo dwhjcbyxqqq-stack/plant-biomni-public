@@ -1,0 +1,10 @@
+{
+  "contract_id": "reviewed-pairs-v1",
+  "formula": "SI=100*S/(S+E)",
+  "stomatal_unit": "one_guard_cell_pair",
+  "nonstomatal_unit": "all_nonstomatal_epidermal_cells_including_precursors",
+  "common_roi": true,
+  "boundary_convention": "Half-open anatomical-centre ROI: top/left in, bottom/right out",
+  "field_overlap_policy": "nonoverlapping_or_deduplicated",
+  "area_unit": "um2"
+}
